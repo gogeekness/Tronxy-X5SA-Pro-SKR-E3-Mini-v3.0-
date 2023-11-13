@@ -665,7 +665,7 @@
 /**
  * Assign more PWM fans for part cooling, synchronized with Fan 0
  */
-//#define REDUNDANT_PART_COOLING_FAN 1  // Index of the first fan to synchronize with Fan 0
+// #define REDUNDANT_PART_COOLING_FAN 1  // Index of the first fan to synchronize with Fan 0
 #ifdef REDUNDANT_PART_COOLING_FAN
   //#define NUM_REDUNDANT_FANS 1        // Number of sequential fans to synchronize with Fan 0
 #endif
@@ -693,11 +693,11 @@
 #define E5_AUTO_FAN_PIN -1
 #define E6_AUTO_FAN_PIN -1
 #define E7_AUTO_FAN_PIN -1
-#define CHAMBER_AUTO_FAN_PIN -1  // Original -1 (no chamber temp sensor, no automatic control) <Trx>
-#define COOLER_AUTO_FAN_PIN FAN1_PIN  // Original -1 new fan1_pin SKR E3 Mini V3.0 <Trx>
+#define CHAMBER_AUTO_FAN_PIN FAN2_PIN  // Original -1 (no chamber temp sensor, no automatic control) <Trx>
+#define COOLER_AUTO_FAN_PIN FAN0_PIN  // Original -1 new fan1_pin SKR E3 Mini V3.0 <Trx>
 #define COOLER_FAN_PIN FAN1_PIN  // Original -1 new fan1_pin SKR E3 Mini V3.0 <Trx>
 
-#define EXTRUDER_AUTO_FAN_TEMPERATURE 50  // Hot-end cooler
+#define EXTRUDER_AUTO_FAN_TEMPERATURE 25  // Hot-end cooler
 #define EXTRUDER_AUTO_FAN_SPEED 255   // 255 == full speed
 #define CHAMBER_AUTO_FAN_TEMPERATURE 25  // In the mainboard enclosure
 #define CHAMBER_AUTO_FAN_SPEED 180   // 180 ~ 75% speed
